@@ -109,7 +109,8 @@ public class NoteController : MonoBehaviour
 
     IEnumerator AwaitGameResult(int order)
     {
-        yield return new WaitForSeconds(startingPoint + order * beatInterval + 8.0f);
+        //모든 노트가 떨어진후 4초후에 게임 결과창으로 이동한다
+        yield return new WaitForSeconds(startingPoint + order * beatInterval + 4.0f);
         GameResult();
     }
 

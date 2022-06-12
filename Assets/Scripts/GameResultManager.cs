@@ -27,9 +27,9 @@ public class GameResultManager : MonoBehaviour
         reader.ReadLine(); //두번쨰 줄 읽기
         //세번째 줄에 있는 점수 정보 받아오기 S점수 A점수 B점수 읽어오기
         string beatInformation = reader.ReadLine();
-        int scoreS = Convert.ToInt32(beatInformation.Split(' ')[3]); //S점수
+        int scoreB = Convert.ToInt32(beatInformation.Split(' ')[3]); //B점수
         int scoreA = Convert.ToInt32(beatInformation.Split(' ')[4]); //A점수
-        int scoreB = Convert.ToInt32(beatInformation.Split(' ')[5]); //B점수
+        int scoreS = Convert.ToInt32(beatInformation.Split(' ')[5]); //S점수
 
         if(PlayerInformation.score >= scoreS)
         {
