@@ -20,7 +20,7 @@ public class NoteBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.down * GameManager.instance.noteSpeed);
+        transform.Translate(Vector3.down * GameManager.instance.noteSpeed * Time.deltaTime); //노트 판정선으로 이동
         
         //사용자가 노트 키를 누를경우
         if(Input.GetKey(keyCode))
